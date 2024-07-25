@@ -15,7 +15,7 @@
         .iframe-container {
             position: relative;
             width: 100%;
-            height: 50%;
+            height: 100%; /* Changed from 50% to 100% */
         }
         .iframe-container iframe {
             position: absolute;
@@ -29,7 +29,11 @@
 </head>
 <body>
     <div class="iframe-container">
-        <iframe width="640" height="320" data-original-width="640" data-original-height="320" src="https://www.thinglink.com/view/scene/1871717255864123878" type="text/html" style="border: none;" webkitallowfullscreen mozallowfullscreen allowfullscreen scrolling="no"></iframe>
+        <iframe src="https://www.thinglink.com/view/scene/1871717255864123878" 
+                webkitallowfullscreen 
+                mozallowfullscreen 
+                allowfullscreen 
+                scrolling="no"></iframe>
     </div>
     <script async src="//cdn.thinglink.me/jse/responsive.js"></script>
     <br/>
