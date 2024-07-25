@@ -46,14 +46,14 @@ body{
 }
 
 .museum_icon img{
-    width: 150px;
-    height: 150px;
+    width: 2em;
+    height: 2em;
 }
 
 
 #podcast_icon{
-    width: 100px;
-    height: 100px;
+    width: 1.5em;
+    height: 1.5em;
 }
 /*the div for the cards*/
 .card_container{
@@ -95,3 +95,12 @@ body{
 .card h1{
     font-family:"Quicksand", sans-serif;
 }
+
+@media (max-width:480px){
+   
+}
+
+@media (min-width:481px) and (max-width:1024){
+   
+}
+
