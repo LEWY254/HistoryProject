@@ -1,16 +1,17 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
-body{
-   margin: 0; 
-   padding: 2px;
-   background-image: url("https://images.unsplash.com/photo-1571256027444-788965b0693f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-   background-size: cover;
-   background-repeat: no-repeat;
+
+body {
+    margin: 0;
+    padding: 2px;
+    background-image: url("https://images.unsplash.com/photo-1571256027444-788965b0693f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
 }
 
-.welcome{
+.welcome {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -21,42 +22,40 @@ body{
     font-size: 45px;
     font-weight: bold;
     color: rgb(255, 255, 255);
-    text-shadow:2px 2px 4px rgba(0, 0, 0, 0.5) ;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     background-color: rgba(0, 0, 0, 0.479);
 }
 
-.welcome p{
+.welcome p {
     font-size: 40px;
     font-weight: bold;
     color: rgb(255, 255, 255);
     border: 2px solid white;
 }
-/*icons*/
+
 .museum_icon {
     font-size: 60px;
     align-items: center;
     justify-content: center;
-    text-align: center; 
+    text-align: center;
     padding-top: 0%;
     padding-bottom: 50px;
-    position : absolute;
+    position: absolute;
     top: 30px;
-    left:30px;
-
+    left: 30px;
 }
 
-.museum_icon img{
-    width: 150px;
-    height: 150px;
+.museum_icon img {
+    width: 2em;
+    height: 2em;
 }
 
-
-#podcast_icon{
-    width: 100px;
-    height: 100px;
+#podcast_icon {
+    width: 1.8em;
+    height: 1.8em;
 }
-/*the div for the cards*/
-.card_container{
+
+.card_container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -65,7 +64,7 @@ body{
     padding-top: 8em;
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,22 +75,52 @@ body{
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 10px;
-
 }
 
-.card_container div:hover{
+.card_container div:hover {
     transform: scale(1.1);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: 2px solid blue;
     cursor: pointer;
 }
-/*card text family*/
-.card p{
-    font-family:"Roboto", sans-serif;
+
+.card p {
+    font-family: "Roboto", sans-serif;
     font-size: 14px;
     font-weight: bold;
 }
 
-.card h1{
-    font-family:"Quicksand", sans-serif;
+.card h1 {
+    font-family: "Quicksand", sans-serif;
+}
+
+@media (max-width: 480px) {
+    .card_container {
+        flex-direction: column;
+        padding-top: 2em;
+        margin-top: 20px; /* Adding space between welcome and card container */
+    }
+
+    .welcome {
+        flex-direction: column;
+        height: auto;
+        margin: 5px;
+        padding-top: 70px; /* Adding padding to avoid overlap with museum icon */
+    }
+
+    .welcome p {
+        font-size: 5vw; /* Adjust font size relative to viewport width */
+        border: none; /* Adjust if needed */
+    }
+
+    .museum_icon {
+        top: 50px;
+        left: 20px;
+        position: fixed; /* Fix position at top left */
+    }
+
+    .museum_icon img {
+        width: 50px; /* Increase the size of the icon */
+        height: 50px;
+    }
 }
