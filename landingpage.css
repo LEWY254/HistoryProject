@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+body{
+   margin: 0; 
+   padding: 2px;
+   background-image: url("pexels-fwstudio-33348-132192.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.welcome{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    font-family: "Cinzel", serif;
+    margin: 10px;
+    font-size: 45px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow:2px 2px 4px rgba(0, 0, 0, 0.5) ;
+    background-color: rgba(0, 0, 0, 0.479);
+}
+
+.welcome p{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border: 2px solid white;
+}
+/*icons*/
+.museum_icon {
+    font-size: 60px;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    padding-top: 0%;
+    padding-bottom: 50px;
+    position : absolute;
+    top: 30px;
+    left:30px;
+
+}
+
+.museum_icon img{
+    width: 150px;
+    height: 150px;
+}
+
+
+#podcast_icon{
+    width: 100px;
+    height: 100px;
+}
+/*the div for the cards*/
+.card_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    padding-top: 8em;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px;
+
+}
+
+.card_container div:hover{
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 2px solid blue;
+    cursor: pointer;
+}
+/*card text family*/
+.card p{
+    font-family:"Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.card h1{
+    font-family:"Quicksand", sans-serif;
+}

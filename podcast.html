@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        body {
+            background-color: #d3d3d3; /* Grey background */
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative; /* Needed for absolute positioning of child elements */
+        }
+        .container {
+            text-align: center;
+        }
+        .home {
+            position: absolute; /* Position it absolutely */
+            top: 20px; /* Distance from the top of the page */
+            left: 20px; /* Distance from the left of the page */
+            background-color: whitesmoke;
+            border-radius: 10px;
+        }
+        .home span {
+            font-size: 100px; /* Adjust font size to set the icon size */
+            width: 100px; /* Set width */
+            height: 100px; /* Set height */
+            display: inline-block; /* Ensures that width and height are respected */
+        }
+        .home:hover{
+            border: 2px solid blue;
+            cursor: pointer;
+        }
+        h1 {
+            margin: 0 0 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="home">
+        <span class="material-symbols-outlined">
+            cottage
+        </span>
+    </div>
+    <div class="container">
+        <h1>Podcast</h1>
+        <audio controls autoplay>
+            <source src="AVeryBritishWayofTorture.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <script>
+        // Get the first element with the class 'home'
+        const homeElement = document.getElementsByClassName("home")[0];
+        
+        // Add click event listener to the element
+        homeElement.addEventListener("click", () => {
+            window.open("index.html", "_self"); // Opens the link in the same tab
+        });
+    </script>
+</body>
+</html>
