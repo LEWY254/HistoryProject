@@ -10,5 +10,5 @@ podcast.addEventListener("click",()=>{
 
 const quiz = document.getElementById("quiz");
 quiz.addEventListener("click", () => {
-    window.open("https://www.wisc-online.com/arcade/games/humanities/history/30622/our-independence-back", "_blank");
+    window.open("https://dashboard.blooket.com/my-sets", "_blank");
 })
